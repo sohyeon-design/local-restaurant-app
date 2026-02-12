@@ -30,10 +30,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     }
 
     // 현재 세션 확인
-    supabase.auth.getSession().then(({ data: { session } }) => {
-      setUser(session?.user ?? null);
-      setLoading(false);
-    });
+    supabase.auth.getSession()
+      .then(({ data: { session } }) => {
+        setUser(session?.user ?? null);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error('Auth session error:', error);
+        setUser(null);
+        setLoading(false);
+      });
 
     // 인증 상태 변경 감지
     const {
@@ -44,7 +50,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
     });
 
     return () => subscription.unsubscribe();
-  }, []);
+  }, [supabase]);
 
   const signOut = async () => {
     if (!supabase) return;

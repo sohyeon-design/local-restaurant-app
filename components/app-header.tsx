@@ -24,10 +24,10 @@ export function AppHeader({
             </div>
             <div>
               <h1 className="text-[17px] font-bold text-foreground leading-tight tracking-tight">
-                나만의 맛집
+                나랑가
               </h1>
               <p className="text-[11px] text-muted-foreground font-medium">
-                {user ? `${user.user_metadata?.name || "사용자"}님 환영해요! ✨` : "오늘도 맛있는 하루 ✨"}
+                {user ? `${user.user_metadata?.name || "사용자"}님 환영해요! ✨` : "현지인 맛집 기록 앱 ✨"}
               </p>
             </div>
           </div>

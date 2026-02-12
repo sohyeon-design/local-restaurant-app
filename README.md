@@ -1,6 +1,6 @@
-# 🍜 로컬 맛집 앱
+# 🍜 나랑가 (Narangga)
 
-나만의 맛집을 기록하고 공유하는 귀여운 맛집 관리 앱
+현지인 맛집 기록 앱 - 현지인만 아는 진짜 맛집을 기록하고 공유하세요
 
 ![Next.js](https://img.shields.io/badge/Next.js-16.1.6-black?logo=next.js)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5-blue?logo=typescript)
@@ -166,6 +166,10 @@ local-restaurant-app/
 2. **맛집 추가/수정**: 폼 입력, 별점 선택, 태그 추가
 3. **맛집 상세**: 상세 정보, 수정/삭제 버튼 (본인 맛집만)
 4. **인증 화면**: 회원가입/로그인 모달
+
+## 💡 프로젝트 이름 유래
+
+**나랑가 (Narangga)**는 "나랑 가자"의 줄임말로, 친구에게 맛집을 추천하며 함께 가고 싶은 마음을 담았습니다.
 
 ## 🤝 기여
 

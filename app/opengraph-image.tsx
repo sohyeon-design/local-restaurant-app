@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
 
-export const alt = '로컬 맛집 앱 - 나만의 맛집을 기록하고 공유하세요';
+export const alt = '나랑가 - 현지인 맛집 기록 앱';
 export const size = {
   width: 1200,
   height: 630,
@@ -91,7 +91,7 @@ export default async function Image() {
               letterSpacing: '-2px',
             }}
           >
-            로컬 맛집 앱
+            나랑가
           </div>
 
           {/* 서브 타이틀 */}
@@ -104,7 +104,7 @@ export default async function Image() {
               marginBottom: 30,
             }}
           >
-            나만의 맛집을 기록하고 공유하세요
+            현지인 맛집 기록 앱
           </div>
 
           {/* 태그들 */}

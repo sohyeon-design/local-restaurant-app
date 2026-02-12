@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer base {
+  :root {
+    --background: 30 40% 98%;
+    --foreground: 24 15% 15%;
+    --card: 0 0% 100%;
+    --card-foreground: 24 15% 15%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 24 15% 15%;
+    --primary: 25 95% 60%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 30 45% 95%;
+    --secondary-foreground: 24 15% 25%;
+    --muted: 30 35% 96%;
+    --muted-foreground: 24 5% 50%;
+    --accent: 15 90% 65%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 30 30% 92%;
+    --input: 30 30% 92%;
+    --ring: 25 95% 60%;
+    --chart-1: 25 95% 60%;
+    --chart-2: 15 90% 65%;
+    --chart-3: 36 85% 60%;
+    --chart-4: 142 50% 45%;
+    --chart-5: 30 25% 40%;
+    --radius: 1.25rem;
+    --sidebar-background: 30 35% 97%;
+    --sidebar-foreground: 24 15% 25%;
+    --sidebar-primary: 25 95% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 30 35% 94%;
+    --sidebar-accent-foreground: 24 15% 25%;
+    --sidebar-border: 30 30% 92%;
+    --sidebar-ring: 25 95% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

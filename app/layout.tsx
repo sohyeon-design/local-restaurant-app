@@ -25,11 +25,20 @@ export const metadata: Metadata = {
     title: "나랑가 | 현지인 맛집 기록 앱",
     description: "현지인만 아는 진짜 맛집을 기록하고 공유하세요. 나랑가에서 나만의 맛집 리스트를 만들어보세요.",
     siteName: "나랑가",
+    images: [
+      {
+        url: "/opengraph-image.png",
+        width: 1200,
+        height: 630,
+        alt: "나랑가 - 현지인 맛집 기록 앱",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "나랑가 | 현지인 맛집 기록 앱",
     description: "현지인만 아는 진짜 맛집을 기록하고 공유하세요. 나랑가에서 나만의 맛집 리스트를 만들어보세요.",
+    images: ["/opengraph-image.png"],
   },
 };
 
